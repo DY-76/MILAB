@@ -10,6 +10,7 @@ def ToSourceData(OriginPath, SavePath, FileNm):
     """
     data = pd.read_csv(OriginPath+'/'+FileNm+'.csv')
     data = data[["충전소 명",
+                 "충전소 ID",
                  "충전기 ID",
                  "충전 용량",
                  "위도",
@@ -30,7 +31,8 @@ def ToValidatedData(OriginPath, SavePath, FileNm):
     :return: ValidatedData로 전처리 된 파일과 파일 이름
     """
     data = pd.read_csv(OriginPath+'/'+FileNm+'.csv')
-    data = data[["충전기 ID",
+    data = data[["충전소 ID",
+                 "충전기 ID",
                  "충전 용량",
                  "위도",
                  "경도",
