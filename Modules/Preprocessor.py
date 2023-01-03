@@ -15,7 +15,7 @@ def ToSourceData(OriginPath, SavePath, FileNm):
                  "충전 용량",
                  "위도",
                  "경도",
-                 "상태 갱신 일자",
+                 "상태 갱신 일시",
                  "최종 충전시작 일시",
                  "최종 충전종료 일시" ]]
     data.to_csv("./" + SavePath + "/SD_" + FileNm + ".csv", mode='w', encoding='utf-8-sig')
